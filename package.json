@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "micro-utils",
   "version": "1.0.0",
   "description": "A micro library of utils for fn programming",
   "main": "index.js",
