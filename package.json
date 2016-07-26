@@ -1,0 +1,11 @@
+{
+  "name": "utils",
+  "version": "1.0.0",
+  "description": "A micro library of utils for fn programming",
+  "main": "index.js",
+  "scripts": {
+    "build": "uglifyjs --c --m -r 'utils' --o dist/utils.min.js -- src/utils.js"
+  },
+  "author": "Karen Serfaty <keserfaty@gmail.com>",
+  "license": "ISC"
+}
