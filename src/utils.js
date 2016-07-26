@@ -4,7 +4,7 @@
   } else if (typeof exports === 'object') {
     module.exports = factory;
   } else {
-    root.juice = factory();
+    root.utils = factory();
   }
 })(this, function() {
   'use strict';
