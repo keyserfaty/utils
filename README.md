@@ -1,13 +1,13 @@
 Utils
 =====
 
-A microlibrary of utils to be used in functional programming
+A micro library of utils with a functional taste
 
 
 Installation
 ---
 
-    npm install micro-utils
+    npm i micro-utils
 
 
 Examples

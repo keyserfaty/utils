@@ -1,11 +1,15 @@
 {
   "name": "micro-utils",
-  "version": "1.0.1",
-  "description": "A micro library of utils for fn programming",
+  "version": "1.0.2",
+  "description": "A micro library of utils with a functional taste",
   "main": "index.js",
   "scripts": {
     "build": "uglifyjs --c --m -r 'utils' --o dist/utils.min.js -- src/utils.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keyserfaty/utils"
+  },
   "author": "Karen Serfaty <keserfaty@gmail.com>",
-  "license": "ISC"
+  "license": "MIT"
 }
