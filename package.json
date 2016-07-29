@@ -1,6 +1,6 @@
 {
   "name": "micro-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A micro library of utils with a functional taste",
   "main": "index.js",
   "scripts": {
