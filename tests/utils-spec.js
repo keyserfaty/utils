@@ -1,10 +1,7 @@
-var jsdom = require('mocha-jsdom');
 var expect = require('chai').expect;
 var util = require('../src/utils');
 
-describe('util', function() {
-  jsdom();
-
+describe('utils', function() {
   describe('fail', function () {
     it('should be a function', function () {
       expect(util.fail).to.be.a('function');
