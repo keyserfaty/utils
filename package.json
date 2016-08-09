@@ -1,8 +1,8 @@
 {
   "name": "micro-utils",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A micro library of utils with a functional taste",
-  "main": "index.js",
+  "main": "src/utils.js",
   "scripts": {
     "build": "uglifyjs --c --m -r 'utils' --o dist/utils.min.js -- src/utils.js",
     "test": "mocha ./tests/utils-spec.js"
