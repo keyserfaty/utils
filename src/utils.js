@@ -19,7 +19,7 @@
   };
 
   utils.truthy = function (str) {
-    return str !== false && existy(str);
+    return str !== false && utils.existy(str);
   };
 
   utils.empty = function (str) {
@@ -27,7 +27,7 @@
   };
 
   utils.valid = function (str) {
-    return truthy(str) && !empty(str);
+    return utils.truthy(str) && !utils.empty(str);
   };
 
   utils.includes = function (arr, elem) {

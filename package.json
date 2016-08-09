@@ -4,11 +4,16 @@
   "description": "A micro library of utils with a functional taste",
   "main": "index.js",
   "scripts": {
-    "build": "uglifyjs --c --m -r 'utils' --o dist/utils.min.js -- src/utils.js"
+    "build": "uglifyjs --c --m -r 'utils' --o dist/utils.min.js -- src/utils.js",
+    "test": "mocha ./tests/utils-spec.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/keyserfaty/utils"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
   },
   "author": "Karen Serfaty <keserfaty@gmail.com>",
   "license": "MIT"
