@@ -9,30 +9,67 @@
 })(this, function() {
   'use strict';
 
-  var utils = {};
-  utils.fail = function (err) {
+  /**
+   * Log an error
+   * @param err
+   */
+  function fail (err) {
     return console.log(err);
-  };
+  }
 
-  utils.existy = function (str) {
-    return str != null;
-  };
+  /**
+   * Return false when arg is null or undefined
+   * @param arg
+   * @returns {boolean}
+   */
+  function existy (arg) {
+    return arg != null;
+  }
 
-  utils.truthy = function (str) {
-    return str !== false && utils.existy(str);
-  };
+  /**
+   * Return false when arg is null, undefined or false
+   * @param arg
+   * @returns {boolean}
+   */
+  function truthy (arg) {
+    return arg !== false && existy(arg);
+  }
 
-  utils.empty = function (str) {
-    return str.length === 0;
-  };
+  /**
+   * Return true when arg is of lenght 0
+   * @param arg
+   * @returns {boolean}
+   */
+  function empty (arg) {
+    return arg.length === 0;
+  }
 
-  utils.valid = function (str) {
-    return utils.truthy(str) && !utils.empty(str);
-  };
+  /**
+   * Return true when arg is not null, undefined, false or empty
+   * @param arg
+   * @returns {boolean}
+   */
+  function valid (arg) {
+    return utils.truthy(arg) && !empty(arg);
+  }
 
-  utils.includes = function (arr, elem) {
+  /**
+   * Return true when an element is present on an array
+   * @param arr
+   * @param elem
+   * @returns {boolean}
+   */
+  function includes (arr, elem) {
     return arr.indexOf(elem) !== -1;
-  };
+  }
+  
+  var utils = {};
+  utils.fail = fail;
+  utils.existy = existy;
+  utils.truthy = truthy;
+  utils.empty = empty;
+  utils.valid = valid;
+  utils.includes = includes;
 
   return utils;
 }());
