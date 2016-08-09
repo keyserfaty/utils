@@ -36,7 +36,7 @@
   }
 
   /**
-   * Return true when arg is of lenght 0
+   * Return true when arg is of length 0
    * @param arg
    * @returns {boolean}
    */
