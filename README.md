@@ -21,21 +21,21 @@ Examples
 import utils from 'micro-utils';
 
 // logs 'err'
-const someFnWithErrors = err => utils.fail(err);
+utils.fail(err);
 
-// true
-const ifNotUndefinedOrNull = x => utils.existy(x);
+// true if x !== null or undefined
+utils.existy(x);
 
-// true
-const ifNotUndefinedNullOrFalse = x => utils.truthy(x);
+// true if x !== null or undefined or false
+utils.truthy(x);
 
-// true if length === 0
-const ifEmpty = x => utils.empty(x);
+// true if length of x === 0
+utils.empty(x);
 
-// true truthy && !empty
-const ifValid = x => utils.valid(x);
+// true if x !== null or undefined or false and is not empty
+utils.valid(x);
 
-// true if elem present in the array
-const ifIncludes = (arr, elem) =>  utils.includes(arr, elem)
+// true if 'elem' is present in array 'arr'
+utils.includes(arr, elem);
 
 ```
