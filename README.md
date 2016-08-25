@@ -1,4 +1,5 @@
 <img src="http://imgh.us/utils_1.svg" height="100">
+
 A micro library of utils with a functional taste
 
 
