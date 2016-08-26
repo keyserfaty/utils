@@ -39,3 +39,9 @@ utils.valid(x);
 utils.includes(arr, elem);
 
 ```
+
+
+License
+--------
+
+[MIT](https://tldrlegal.com/license/mit-license)
